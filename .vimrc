@@ -90,7 +90,10 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'scrooloose/nerdcommenter'
-"Bundle 'vim-scripts/Conque-Shell'
 Bundle 'pthrasher/conqueterm-vim'
 Bundle 'tpope/vim-rbenv.git'
 Bundle 't9md/vim-ruby-xmpfilter'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle 'honza/vim-snippets'
