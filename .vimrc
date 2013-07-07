@@ -40,10 +40,23 @@ map <C-n> :NERDTreeToggle<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+" easier navigation between split windows
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 
 " Slime config
 let g:slime_target = "tmux"
+
+nmap <buffer> <F4> <Plug>(xmpfilter-run)
+xmap <buffer> <F4> <Plug>(xmpfilter-run)
+imap <buffer> <F4> <Plug>(xmpfilter-run)
+nmap <buffer> <F3> <Plug>(xmpfilter-mark)
+xmap <buffer> <F3> <Plug>(xmpfilter-mark)
+imap <buffer> <F3> <Plug>(xmpfilter-mark)
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -76,4 +89,8 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'vim-scripts/Conque-Shell'
+Bundle 'scrooloose/nerdcommenter'
+"Bundle 'vim-scripts/Conque-Shell'
+Bundle 'pthrasher/conqueterm-vim'
+Bundle 'tpope/vim-rbenv.git'
+Bundle 't9md/vim-ruby-xmpfilter'
