@@ -1,5 +1,6 @@
 set nocompatible               " be iMproved
-set number
+"set number
+set relativenumber
 set autoread	
 let mapleader=","
 set nowrap        " don't wrap lines
@@ -21,6 +22,18 @@ set nobackup
 set nowb
 set title
 set pastetoggle=<F2>
+set hidden
+set vb
+" Make command line two lines high
+set ch=2
+" tell VIM to always put a status line in, even if there is only one window
+set laststatus=2
+
+" " Don't update the display while executing macros
+set lazyredraw
+set showcmd
+" Keep some stuff in the history
+set history=100
 
 nnoremap ; :
 
