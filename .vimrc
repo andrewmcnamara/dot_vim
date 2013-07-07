@@ -1,4 +1,5 @@
 set nocompatible               " be iMproved
+"colorscheme desert
 "set number
 set relativenumber
 set autoread	
@@ -24,6 +25,12 @@ set title
 set pastetoggle=<F2>
 set hidden
 set vb
+set cursorline
+"hi CursorLine cterm=NONE ctermbg=black
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+"
 " Make command line two lines high
 set ch=2
 " tell VIM to always put a status line in, even if there is only one window
@@ -76,7 +83,6 @@ imap <buffer> <F3> <Plug>(xmpfilter-mark)
 " Enable syntax highlighting
 syntax enable
 "
-colorscheme desert
 set background=dark
 "
 " Set extra options when running in GUI mode
