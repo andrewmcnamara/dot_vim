@@ -31,6 +31,7 @@ Bundle "garbas/vim-snipmate"
 Bundle 'honza/vim-snippets'
 Bundle 'zeis/vim-kolor'
 Bundle 'tomasr/molokai'
+Bundle 'vim-scripts/pyte'
 
 set number
 "set relativenumber
@@ -116,3 +117,4 @@ endif
 "set statusline=%{bufferline#generate_string()}
 "
 colorscheme molokai
+set guifont=Monaco:h12
