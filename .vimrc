@@ -1,7 +1,39 @@
 set nocompatible               " be iMproved
-"colorscheme desert
-"set number
-set relativenumber
+filetype off                   " required!
+filetype plugin indent on      " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+"Bundles
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'bling/vim-airline'
+Bundle 'jpalardy/vim-slime'
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'kien/ctrlp.vim'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'pthrasher/conqueterm-vim'
+Bundle 'tpope/vim-rbenv.git'
+Bundle 't9md/vim-ruby-xmpfilter'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle 'honza/vim-snippets'
+Bundle 'zeis/vim-kolor'
+Bundle 'tomasr/molokai'
+
+set number
+"set relativenumber
 set autoread	
 let mapleader=","
 set nowrap        " don't wrap lines
@@ -26,34 +58,22 @@ set pastetoggle=<F2>
 set hidden
 set vb
 set cursorline
-"hi CursorLine cterm=NONE ctermbg=black
-hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
-"
+set background=dark
+set t_Co=256 " 256 colors
+
+
 " Make command line two lines high
 set ch=2
 " tell VIM to always put a status line in, even if there is only one window
 set laststatus=2
 
-" " Don't update the display while executing macros
+" Don't update the display while executing macros
 set lazyredraw
 set showcmd
 " Keep some stuff in the history
 set history=100
 
 nnoremap ; :
-
-filetype off                   " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-filetype plugin indent on     " required!
 
 "autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
@@ -65,7 +85,6 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-
 
 " Slime config
 let g:slime_target = "tmux"
@@ -93,26 +112,7 @@ if has("gui_running")
     set guitablabel=%M\ %t
 endif
 " Buffer line config
-let g:bufferline_echo=0
-set statusline=%{bufferline#generate_string()}
+"let g:bufferline_echo=0
+"set statusline=%{bufferline#generate_string()}
 "
-"Bundles
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'bling/vim-airline'
-Bundle 'jpalardy/vim-slime'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'kien/ctrlp.vim'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'pthrasher/conqueterm-vim'
-Bundle 'tpope/vim-rbenv.git'
-Bundle 't9md/vim-ruby-xmpfilter'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle 'honza/vim-snippets'
+colorscheme molokai
