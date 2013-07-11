@@ -61,6 +61,8 @@ set vb
 set cursorline
 set background=dark
 set t_Co=256 " 256 colors
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 
 " Make command line two lines high
@@ -117,4 +119,7 @@ endif
 "set statusline=%{bufferline#generate_string()}
 "
 colorscheme molokai
-set guifont=Monaco:h12
+set transparency=5
+set guioptions=aAce
+set guifont=Monaco:h14
+set columns=150
