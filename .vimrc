@@ -109,17 +109,17 @@ set background=dark
 "
 " Set extra options when running in GUI mode
 if has("gui_running")
-    set guioptions-=T
-    set guioptions+=e
-    set t_Co=256
-    set guitablabel=%M\ %t
+	set guioptions-=T
+	set guioptions+=e
+	set t_Co=256
+	set guitablabel=%M\ %t
+	set transparency=5
+	set guioptions=aAce
+	set guifont=Monaco:h14
+	set columns=150
 endif
 " Buffer line config
 "let g:bufferline_echo=0
 "set statusline=%{bufferline#generate_string()}
 "
 colorscheme molokai
-set transparency=5
-set guioptions=aAce
-set guifont=Monaco:h14
-set columns=150
