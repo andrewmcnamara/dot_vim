@@ -91,6 +91,7 @@ nnoremap <c-l> <c-w>l
 
 " Slime config
 let g:slime_target = "tmux"
+nnoremap <C-a> ggVG
 
 nmap <buffer> <F4> <Plug>(xmpfilter-run)
 xmap <buffer> <F4> <Plug>(xmpfilter-run)
