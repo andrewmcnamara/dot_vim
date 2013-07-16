@@ -4,6 +4,7 @@ filetype plugin indent on      " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+set path=$PWD/**
 
 " let Vundle manage Vundle
 " required! 
