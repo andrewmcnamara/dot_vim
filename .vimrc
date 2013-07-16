@@ -1,6 +1,5 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
-filetype plugin indent on      " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -34,8 +33,8 @@ Bundle 'honza/vim-snippets'
 Bundle 'zeis/vim-kolor'
 Bundle 'tomasr/molokai'
 Bundle 'vim-scripts/pyte'
-Bundle 'vim-scripts/AutoTag'
-
+Bundle 'szw/vim-tags'
+filetype plugin indent on      " required!
 set number
 "set relativenumber
 set autoread	
