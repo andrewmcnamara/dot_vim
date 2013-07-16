@@ -5,6 +5,7 @@ filetype plugin indent on      " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 set path=$PWD/**
+set tags=./tags,tags;$HOME
 
 " let Vundle manage Vundle
 " required! 
@@ -33,6 +34,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'zeis/vim-kolor'
 Bundle 'tomasr/molokai'
 Bundle 'vim-scripts/pyte'
+Bundle 'vim-scripts/AutoTag'
 
 set number
 "set relativenumber
