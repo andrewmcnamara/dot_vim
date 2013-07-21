@@ -34,6 +34,7 @@ Bundle 'zeis/vim-kolor'
 Bundle 'tomasr/molokai'
 Bundle 'vim-scripts/pyte'
 Bundle 'szw/vim-tags'
+Bundle 'rking/ag.vim'
 filetype plugin indent on      " required!
 set number
 "set relativenumber
