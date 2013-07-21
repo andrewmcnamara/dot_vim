@@ -37,6 +37,7 @@ Bundle 'szw/vim-tags'
 Bundle 'rking/ag.vim'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
+Bundle 'sjl/gundo.vim'
 
 filetype plugin indent on      " required!
 set number
