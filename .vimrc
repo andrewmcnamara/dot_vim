@@ -88,6 +88,10 @@ set history=100
 
 nnoremap ; :
 
+"Map jk to ESC
+inoremap jk <esc>
+inoremap kj <esc>
+
 "autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 let g:ctrlp_map = '<c-p>'
