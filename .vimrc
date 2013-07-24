@@ -38,6 +38,9 @@ Bundle 'rking/ag.vim'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'Valloric/YouCompleteMe'
+
+hi LineNR ctermfg=grey              " Sets the color of the line numbers
 
 filetype plugin indent on      " required!
 set number
@@ -95,6 +98,10 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+"http://www.kevinberridge.com/2010/10/vim-escape.html
+imap jk <esc>
+imap kj <esc>
 
 " Slime config
 let g:slime_target = "tmux"
